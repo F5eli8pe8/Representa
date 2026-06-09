@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import InfoLayout from '@/components/Layouts/InfoLayout'
 import Style from '@/components/Layouts/Layout.module.css'
 import Image from 'next/image'
