@@ -1,0 +1,87 @@
+.conteinerPrincipal {
+  background-color: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.projeto {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff2b6d, #a855f7, #21b1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.separador {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+}
+
+.descricao {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.credito {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.credito strong {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Barra de arco-íris decorativa na base */
+.arcoIris {
+  display: flex;
+  width: 100%;
+  height: 4px;
+  margin-top: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.arcoIris span {
+  flex: 1;
+}
+
+.arcoIris span:nth-child(1) { background-color: #ff2b6d; }
+.arcoIris span:nth-child(2) { background-color: #ff6b35; }
+.arcoIris span:nth-child(3) { background-color: #ffd700; }
+.arcoIris span:nth-child(4) { background-color: #3da542; }
+.arcoIris span:nth-child(5) { background-color: #21b1ff; }
+.arcoIris span:nth-child(6) { background-color: #a855f7; }
+
+@media (max-width: 600px) {
+  .conteinerPrincipal {
+    padding: 24px 20px 20px;
+  }
+
+  .projeto {
+    font-size: 16px;
+  }
+
+  .descricao,
+  .credito {
+    font-size: 12px;
+  }
+}
