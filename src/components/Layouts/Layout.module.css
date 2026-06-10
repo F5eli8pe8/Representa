@@ -1,9 +1,12 @@
 /* Container geral */
 .layoutContainer {
   min-height: 100vh;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Botão de voltar */
@@ -34,8 +37,10 @@
   justify-content: flex-start;
   text-align: center;
   padding: 80px 20px 20px;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Título */
@@ -45,6 +50,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
+  word-break: break-word;
 }
 
 /* Descrição */
@@ -54,16 +60,18 @@
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 700px;
+  width: 100%;
 }
 
 /* Lista de características */
 .lista {
   display: flex;
-  gap: 16px; /* Espaço entre os itens */
+  gap: 16px;
   justify-content: center;
-  flex-wrap: wrap; /* Quebra para segunda linha se não couber */
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .lista li {
@@ -75,19 +83,48 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Imagens das bandeiras */
+.contentArea img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 
+/* ===== RESPONSIVO MOBILE ===== */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 36px;
+  }
 
+  .descricao {
+    font-size: 16px;
+  }
 
+  .lista {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .lista li {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
 
+  .contentArea {
+    padding: 70px 16px 20px;
+  }
+}
+
+/* ===== BACKGROUNDS ===== */
 .bgAssexual {
   background: linear-gradient(90deg, #72508e, #21061a);
   min-height: 100vh;
   width: 100%;
 }
 
-.bgArromantico{
-  background: linear-gradient(90deg,#3da542, #144e03);
+.bgArromantico {
+  background: linear-gradient(90deg, #3da542, #144e03);
   min-height: 100vh;
   width: 100%;
 }
@@ -98,11 +135,7 @@
   width: 100%;
 }
 
-
-
-
-
-.bgPansexual{
+.bgPansexual {
   background: linear-gradient(90deg, #ff2b6d, #00c4ff);
   min-height: 100vh;
   width: 100%;
@@ -120,18 +153,13 @@
   width: 100%;
 }
 
-
-
-
-
-
 .bgAegosexual {
   background: linear-gradient(90deg, #4d0e80, #21061a);
   min-height: 100vh;
   width: 100%;
 }
 
-.bgAegoromantico{
+.bgAegoromantico {
   background: linear-gradient(90deg, #3da542, #525252);
   min-height: 100vh;
   width: 100%;
